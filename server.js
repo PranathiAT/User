@@ -275,7 +275,8 @@ function mongoConnect() {
     }, (error, client) => {
     if(error) {
         reject(error);
-    } else {
+    }
+    else {
         db = client.db('users');
         usersCollection = db.collection('users');
         ordersCollection = db.collection('orders');
